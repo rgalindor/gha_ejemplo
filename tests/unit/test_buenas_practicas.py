@@ -1,13 +1,16 @@
 import sys
 
-sys.path.append("ejemplo/app")
+sys.path.append("gha_ejemplo/app")
 sys.path.append("../")
+
+print(sys.path)
 
 import pytest
 
-from ejemplo.app.funciones import procesar_nombre
-from ejemplo.app.funciones import procesar_apellido_paterno
-from ejemplo.app.funciones import procesar_apellido_materno
+from gha_ejemplo.app.funciones import procesar_nombre
+from gha_ejemplo.app.funciones import procesar_apellido_paterno
+from gha_ejemplo.app.funciones import procesar_apellido_materno
+
 
 # Pruebas para el nombre
 def obtener_datos_test_nombre():
