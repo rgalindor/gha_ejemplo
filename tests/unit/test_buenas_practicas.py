@@ -1,15 +1,15 @@
-import sys
+# import sys
 
-sys.path.append("gha_ejemplo/app")
-sys.path.append("../")
+# sys.path.append("app/")
+# sys.path.append("../")
 
-print(sys.path)
+# print(sys.path)
 
 import pytest
 
-from gha_ejemplo.app.funciones import procesar_nombre
-from gha_ejemplo.app.funciones import procesar_apellido_paterno
-from gha_ejemplo.app.funciones import procesar_apellido_materno
+from app.funciones import procesar_nombre
+from app.funciones import procesar_apellido_paterno
+from app.funciones import procesar_apellido_materno
 
 
 # Pruebas para el nombre
