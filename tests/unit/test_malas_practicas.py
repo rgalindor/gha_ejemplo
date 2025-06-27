@@ -1,4 +1,5 @@
-from ejemplo.app.funciones import procesar_nombre
+from app.funciones import procesar_nombre
+
 
 # Pruebas para el nombre
 def test_procesar_nombre():
