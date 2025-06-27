@@ -1,8 +1,3 @@
-# import sys
-
-# sys.path.append("ejemplo/app")
-# sys.path.append("../")
-
 import pytest
 
 from app.funciones import procesar_nombre
@@ -21,8 +16,15 @@ def obtener_datos_test_integracion():
     ]
 
 
-@pytest.mark.parametrize("nombre, ap, am, esperado", obtener_datos_test_integracion())
+@pytest.mark.parametrize(
+    "nombre, ap, am, esperado", obtener_datos_test_integracion()
+)
 def test_divide_parametrize(nombre, ap, am, esperado):
     assert (
-        procesar_nombre(nombre) + " " + procesar_apellido_paterno(ap) + " " + procesar_apellido_materno(am) == esperado
+        procesar_nombre(nombre)
+        + " "
+        + procesar_apellido_paterno(ap)
+        + " "
+        + procesar_apellido_materno(am)
+        == esperado
     )

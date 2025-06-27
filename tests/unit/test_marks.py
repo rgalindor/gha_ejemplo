@@ -1,11 +1,6 @@
-import sys
-
-sys.path.append("ejemplo/app")
-sys.path.append("../")
-
 import pytest
 
-from ejemplo.app.funciones import procesar_nombre
+from app.funciones import procesar_nombre
 
 
 @pytest.mark.skip(reason="No hay forma de probar esto ahora")
